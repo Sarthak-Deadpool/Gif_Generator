@@ -1,16 +1,50 @@
-# React + Vite
+# 🎬 GIF Generator
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple GIF Generator web application built with **React.js**, **Axios**, **Tailwind CSS**, and the **GIPHY API**.
 
-Currently, two official plugins are available:
+The project also uses a **custom React hook** to separate API-related logic from the UI components and keep the code clean and reusable.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🚀 Features
 
-## React Compiler
+- Generate random GIFs
+- Search GIFs using custom tags
+- Fetch GIFs using the GIPHY API
+- API requests handled using Axios
+- Custom React Hook for API logic
+- React state management with `useState`
+- API data fetching with `useEffect`
+- Responsive UI using Tailwind CSS
+- Environment variables for API configuration
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🛠️ Tech Stack
 
-## Expanding the ESLint configuration
+- **React.js**
+- **Vite**
+- **JavaScript**
+- **Axios**
+- **Tailwind CSS**
+- **GIPHY API**
+- **React Custom Hooks**
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 📁 Project Structure
+
+```text
+gif-generator/
+│
+├── src/
+│   ├── components/
+│   │   ├── GIF.jsx
+│   │   └── Tab.jsx
+│   │
+│   ├── hooks/
+│   │   └── Api.jsx
+│   │
+│   ├── App.jsx
+│   ├── main.jsx
+│   └── index.css
+│
+├── .env
+├── .gitignore
+├── package.json
+├── vite.config.js
+└── README.md
